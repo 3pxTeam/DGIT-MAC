@@ -2,7 +2,8 @@
 
 [DGit CLI](https://github.com/3pxTeam/DGIT-CLI) 디자인 파일 전용 버전 관리 시스템을 위한 아름답고 네이티브한 macOS 스타일 데스크탑 인터페이스입니다.
 
-![DGit GUI Screenshot](screenshot.png)
+![DGit GUI Screenshot](https://github.com/user-attachments/assets/f61e62e9-9f35-48ca-83fc-9367ec183dbe)
+
 
 ## ✨ 주요 기능
 
