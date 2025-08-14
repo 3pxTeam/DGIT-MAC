@@ -222,12 +222,6 @@ dgit --version
 
 MIT License
 
-## 감사의 말
-
-- **DGit CLI 팀**: 놀라운 기본 버전 관리 시스템 제공
-- **Electron 팀**: 크로스 플랫폼 데스크탑 프레임워크 제공
-- **macOS 디자인**: 네이티브 인터페이스 디자인 영감 제공
-
 ## 관련 프로젝트
 
 - [DGit CLI](https://github.com/3pxTeam/DGIT-CLI) - 핵심 CLI 도구
