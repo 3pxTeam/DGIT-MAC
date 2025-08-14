@@ -1,11 +1,12 @@
-# DGit GUI 🎨
+# DGit macOS
 
-[DGit CLI](https://github.com/3pxTeam/DGIT-CLI) 디자인 파일 전용 버전 관리 시스템을 위한 아름답고 네이티브한 macOS 스타일 데스크탑 인터페이스입니다.
+아름다운 네이티브 macOS 디자인 파일 버전 관리 인터페이스
 
-![DGit GUI Screenshot](https://github.com/user-attachments/assets/f61e62e9-9f35-48ca-83fc-9367ec183dbe)
+## 개요
 
+DGit macOS는 [DGit CLI](https://github.com/3pxTeam/DGIT-CLI)를 위한 네이티브 macOS 데스크탑 애플리케이션입니다. 복잡한 명령줄 대신 직관적인 GUI로 디자인 파일 버전 관리를 제공하며, macOS의 디자인 언어와 완벽하게 통합됩니다.
 
-## ✨ 주요 기능
+## 주요 기능
 
 ### 🖥️ 네이티브 macOS 경험
 - **신호등 컨트롤**: 정통 macOS 윈도우 컨트롤 (닫기, 최소화, 최대화)
@@ -13,19 +14,19 @@
 - **부드러운 애니메이션**: 인터페이스 전반에 걸친 유동적인 전환과 호버 효과
 - **키보드 단축키**: 완전한 macOS 키보드 단축키 지원
 
-### 🎨 디자인 파일 관리
+### 📁 스마트 파일 관리
 - **비주얼 파일 브라우저**: 타입별 아이콘으로 디자인 파일 탐색 및 관리
 - **스마트 파일 감지**: PSD, AI, Sketch, Figma, XD 파일 자동 인식
 - **파일 통계**: 실시간 프로젝트 통계 및 파일 개수 표시
 - **Finder 연동**: macOS Finder에서 파일에 빠르게 접근
 
-### 🚀 버전 관리 작업
+### 🔄 버전 관리
 - **원클릭 저장소 설정**: 한 번의 클릭으로 DGit 저장소 초기화
 - **비주얼 커밋 인터페이스**: 메시지 입력이 포함된 직관적인 커밋 다이얼로그
 - **자동 스테이징**: 원활한 워크플로를 위한 커밋 전 자동 파일 스테이징
 - **커밋 히스토리**: 프로젝트 진화 과정의 아름다운 타임라인 뷰
 
-### 🔄 고급 복원 시스템
+### 🔧 파일 복원
 - **모달 버전 선택**: 복원 지점 선택을 위한 우아한 모달 인터페이스
 - **버전 미리보기**: 복원 전 커밋 메시지, 날짜, 해시 확인
 - **안전한 복원 프로세스**: 실수로 인한 데이터 손실 방지를 위한 확인 다이얼로그
@@ -37,32 +38,26 @@
 - **실시간 업데이트**: 라이브 상태 업데이트 및 파일 스캔
 - **터미널 출력**: 상세한 작업 피드백을 위한 통합 터미널
 
-## 🛠️ 기술 스택
+## 설치 방법
 
-- **Electron**: 크로스 플랫폼 데스크탑 앱 프레임워크
-- **Node.js**: 백엔드 작업 및 파일 시스템 접근
-- **HTML/CSS/JavaScript**: 네이티브 스타일링을 적용한 모던 웹 기술
-- **IPC Communication**: 안전한 메인-렌더러 프로세스 통신
-
-## 📋 시스템 요구사항
-
-- **macOS**: 10.14 이상 (macOS 최적화)
+### 필요 사항
+- **macOS**: 10.14 이상
 - **DGit CLI**: 설치되어 있고 접근 가능해야 함
-- **Node.js**: 16.0 이상
-- **Electron**: 28.0 이상
+- **Node.js**: 16.0 이상 (개발 시)
+- **Electron**: 28.0 이상 (개발 시)
 
-## 🚀 설치 방법
+### 바이너리 설치 (권장)
 
-### 방법 1: 릴리즈 다운로드
-1. [Releases](https://github.com/your-username/dgit-gui/releases)에서 최신 릴리즈 다운로드
-2. `.dmg` 파일을 마운트하고 DGit GUI를 응용 프로그램으로 드래그
+1. [Releases](https://github.com/3pxTeam/DGIT-MAC/releases)에서 최신 릴리즈 다운로드
+2. `.dmg` 파일을 마운트하고 DGit을 응용 프로그램 폴더로 드래그
 3. 응용 프로그램 폴더에서 실행
 
-### 방법 2: 소스에서 빌드
+### 소스에서 빌드
+
 ```bash
 # 저장소 클론
-git clone https://github.com/your-username/dgit-gui.git
-cd dgit-gui
+git clone https://github.com/3pxTeam/DGIT-MAC.git
+cd DGIT-MAC/ui
 
 # 의존성 설치
 npm install
@@ -74,19 +69,21 @@ npm start
 npm run build
 ```
 
-## 🎯 빠른 시작
+## 사용법
 
-1. **DGit GUI 실행** - 응용 프로그램에서 실행하거나 `npm start`
-2. **프로젝트 선택** - "새 프로젝트 선택" 클릭 또는 ⌘+O 사용
+### 기본 워크플로
+
+1. **DGit 실행** - 응용 프로그램에서 실행하거나 `npm start`
+2. **프로젝트 선택** - "새 프로젝트 선택" 클릭 또는 `⌘+O` 사용
 3. **저장소 초기화** - 새 프로젝트의 경우 "저장소 초기화" 클릭
-4. **파일 추가** - "모든 파일 추가" 사용 또는 ⌘+A로 파일 스테이징
-5. **변경사항 커밋** - "커밋" 클릭 또는 ⌘+S로 설명과 함께 커밋
+4. **파일 추가** - "모든 파일 추가" 사용 또는 `⌘+A`로 파일 스테이징
+5. **변경사항 커밋** - "커밋" 클릭 또는 `⌘+S`로 설명과 함께 커밋
 6. **파일 복원** - 파일 선택 후 "복원" 클릭하여 버전 선택
 
-## ⌨️ 키보드 단축키
+### 키보드 단축키
 
 | 단축키 | 동작 |
-|--------|------|
+|-------|------|
 | `⌘+O` | 프로젝트 열기/선택 |
 | `⌘+A` | 모든 파일 추가 |
 | `⌘+S` | 변경사항 커밋 |
@@ -95,124 +92,143 @@ npm run build
 | `Esc` | 모달 닫기/홈으로 |
 | `Enter` | 모달에서 확인 |
 
-## 🎨 UI Components
+## 사용자 인터페이스
 
-### Start Screen
-- **Project Selection**: Native file picker integration
-- **Recent Projects**: Quick access with project paths and names
-- **Clean Welcome**: Intuitive first-time user experience
+### 시작 화면
+- **프로젝트 선택**: 네이티브 파일 선택기 통합
+- **최근 프로젝트**: 프로젝트 경로와 이름으로 빠른 접근
+- **깔끔한 환영**: 직관적인 첫 사용자 경험
 
-### Main Interface
-- **Sidebar Navigation**: Project info and navigation sections
-- **Content Views**: 
-  - 📊 Project Status
-  - 📁 Design Files
-  - 📝 Commit History
-  - ⚙️ Settings
+### 메인 인터페이스
+- **사이드바 내비게이션**: 프로젝트 정보 및 내비게이션 섹션
+- **콘텐츠 뷰**:
+  - 📊 **프로젝트 상태**
+  - 📁 **디자인 파일**
+  - 📝 **커밋 히스토리**
+  - ⚙️ **설정**
 
-### Modals & Dialogs
-- **Commit Modal**: Rich text input with preview
-- **Restore Modal**: Version selection with commit details
-- **Confirmation Dialogs**: Safe operation confirmations
+### 모달 및 다이얼로그
+- **커밋 모달**: 미리보기가 포함된 리치 텍스트 입력
+- **복원 모달**: 커밋 세부정보가 있는 버전 선택
+- **확인 다이얼로그**: 안전한 작업 확인
 
-## 🔧 Configuration
+## 지원 파일 형식
 
-### DGit Path Detection
-The app automatically detects DGit installation in:
-- Bundled binary (if packaged)
-- `~/Desktop/DGIT/dgit/dgit`
-- System PATH
-- Common installation directories
+DGit macOS는 다음 디자인 파일 형식을 인식하고 적절한 아이콘을 표시합니다:
 
-### Recent Projects
-Projects are automatically saved to `~/.dgit-gui/recent-projects.json`
+### Adobe Creative Suite
+- `.psd` - Photoshop 문서
+- `.ai` - Illustrator 파일
 
-## 🐛 Troubleshooting
+### 기타 디자인 도구
+- `.sketch` - Sketch 파일
+- `.fig` - Figma 파일
+- `.xd` - Adobe XD 파일
 
-### DGit Not Found
+### 래스터 및 벡터
+- `.png`, `.jpg`, `.jpeg`, `.gif` - 래스터 이미지
+- `.svg` - 벡터 그래픽
+- 기타 모든 파일 형식은 일반 파일 아이콘으로 표시
+
+## 기술 스택
+
+- **Electron**: 크로스 플랫폼 데스크탑 앱 프레임워크
+- **Node.js**: 백엔드 작업 및 파일 시스템 접근
+- **HTML/CSS/JavaScript**: 네이티브 스타일링을 적용한 모던 웹 기술
+- **IPC Communication**: 안전한 메인-렌더러 프로세스 통신
+
+## 시스템 요구사항
+
+- **macOS**: 10.14 이상 (macOS 최적화)
+- **메모리**: 최소 4GB RAM
+- **저장공간**: 200MB 이상
+- **DGit CLI**: 설치되어 있고 접근 가능해야 함
+
+## 개발
+
+### 프로젝트 구조
+
+```
+dgit-gui/
+├── main.js                # Electron 메인 프로세스
+├── preload.js             # IPC 브리지
+├── renderer/              # 프론트엔드 파일
+│   ├── index.html         # 메인 UI 구조
+│   ├── index.js           # 프론트엔드 로직
+│   └── style.css          # macOS 스타일 CSS
+├── assets/                # 아이콘 및 이미지
+└── package.json           # 의존성 및 스크립트
+```
+
+### 개발 스크립트
+
 ```bash
-# Check DGit installation
+npm start          # 개발 모드 시작
+npm run dev        # 개발자 도구와 함께 시작
+npm run build      # 프로덕션 빌드
+npm run pack       # 배포용 패키징
+```
+
+### DGit CLI 감지
+
+앱은 다음 위치에서 DGit 설치를 자동으로 감지합니다:
+
+- 번들된 바이너리 (패키지된 경우)
+- `~/Desktop/DGIT/dgit/dgit`
+- 시스템 PATH
+- 일반적인 설치 디렉토리
+
+### 프로젝트 저장
+
+프로젝트는 `~/.dgit-gui/recent-projects.json`에 자동으로 저장됩니다.
+
+## 문제 해결
+
+### DGit CLI 확인
+
+```bash
+# DGit 설치 확인
 which dgit
 dgit --version
 
-# Install DGit CLI first
-# Follow instructions at: https://github.com/3pxTeam/DGIT-CLI
+# DGit CLI 먼저 설치
+# 지침 참조: https://github.com/3pxTeam/DGIT-CLI
 ```
 
-### Commit Failures
-- Ensure files are modified before committing
-- Check repository initialization with "저장소 초기화"
-- Verify DGit CLI is working: `dgit status`
+### 일반적인 문제들
 
-### Restore Issues
-- Ensure at least one commit exists
-- Check file selection before attempting restore
-- Verify version numbers in commit history
+- **커밋 전 파일이 수정되었는지 확인**
+- **"저장소 초기화"로 저장소 초기화 확인**
+- **DGit CLI가 작동하는지 확인**: `dgit status`
+- **최소 하나의 커밋이 존재하는지 확인**
+- **복원 시도 전 파일 선택 확인**
+- **커밋 히스토리에서 버전 번호 확인**
 
-## 🎯 Supported File Types
+## 기여하기
 
-### Design Files
-- **Adobe**: `.psd`, `.ai`
-- **Sketch**: `.sketch`
-- **Figma**: `.fig`
-- **Adobe XD**: `.xd`
+1. 저장소 포크
+2. 기능 브랜치 생성: `git checkout -b feature/amazing-feature`
+3. 변경사항 커밋: `git commit -m 'Add amazing feature'`
+4. 브랜치에 푸시: `git push origin feature/amazing-feature`
+5. Pull Request 열기
 
-### Image Files
-- **Raster**: `.png`, `.jpg`, `.jpeg`, `.gif`
-- **Vector**: `.svg`
+### 기여 가이드라인
+- Electron 및 Node.js 모범 사례 준수
+- macOS 디자인 가이드라인 따르기
+- 새로운 기능에 대한 적절한 테스트 추가
+- 코드 변경 시 문서 업데이트
 
-### Other Files
-- All other file types with generic file icon
+## 라이선스
 
-## 🚧 Development
+MIT License
 
-### Project Structure
-```
-dgit-gui/
-├── main.js          # Electron main process
-├── preload.js       # IPC bridge
-├── renderer/        # Frontend files
-│   ├── index.html   # Main UI structure
-│   ├── index.js     # Frontend logic
-│   └── style.css    # macOS-style CSS
-├── assets/          # Icons and images
-└── package.json     # Dependencies and scripts
-```
+## 감사의 말
 
-### Development Commands
-```bash
-npm start           # Start development
-npm run dev         # Start with dev tools
-npm run build       # Build for production
-npm run pack        # Package for distribution
-```
+- **DGit CLI 팀**: 놀라운 기본 버전 관리 시스템 제공
+- **Electron 팀**: 크로스 플랫폼 데스크탑 프레임워크 제공
+- **macOS 디자인**: 네이티브 인터페이스 디자인 영감 제공
 
-## 🤝 Contributing
+## 관련 프로젝트
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit changes: `git commit -m 'Add amazing feature'`
-4. Push to branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **DGit CLI Team**: For the amazing underlying version control system
-- **Electron Team**: For the cross-platform desktop framework
-- **macOS Design**: For inspiration on native interface design
-
-## 🔗 Related Links
-
-- [DGit CLI Repository](https://github.com/3pxTeam/DGIT-CLI)
-- [Electron Documentation](https://www.electronjs.org/docs)
-- [macOS Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/macos/)
-
----
-
-<p align="center">
-  <strong>Built with ❤️ for designers and creative professionals</strong>
-</p>
+- [DGit CLI](https://github.com/3pxTeam/DGIT-CLI) - 핵심 CLI 도구
+- [3pxTeam](https://github.com/3pxTeam) - 조직 메인 페이지
